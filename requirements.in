@@ -1,0 +1,5 @@
+Flask
+pre-commit==3.5.0
+pip-tools==7.4.1
+black==24.3.0
+ruff==0.3.5
