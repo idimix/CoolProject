@@ -5,3 +5,30 @@ line-length = 120
 [tool.ruff]
 line-length = 120
 ignore = ["E999"]
+
+[tool.poetry]
+name = "CoolProject"
+version = "0.1.0"
+description = "course mlops 3.0"
+authors = ["Ivashnikov Dmitriy"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scikit-learn = "^1.3.2"
+pandas = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+scikit-learn = "^1.3.2"
+pandas = "^2.0.3"
+seaborn = "^0.13.2"
+catboost = "^1.2.3"
+pre-commit = "^3.5.0"
+pip-tools = "^7.4.1"
+black = "^24.3.0"
+ruff = "^0.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
