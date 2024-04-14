@@ -8,7 +8,6 @@ RUN python -m pip install --no-cache-dir poetry==1.8.2
 
 COPY poetry.lock pyproject.toml ./
 
-RUN echo asdasd
 RUN echo ENVIROMENT=$ENVIROMENT
 
 RUN if [ "$ENVIROMENT" = "prod" ]; \
